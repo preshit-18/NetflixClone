@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainLanding{
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/d7af077c-af5a-4055-8f9a-740a43588583/95bae10c-9773-4447-af4e-612a244231bd/IN-en-20230717-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+}
+
+header{
+    display: grid;
+    grid-template-areas: "mainLogo" "navBar";
+    grid-template-columns: 1fr 1fr;
+}
+
+.mainLogo{
+    grid-area: "mainLogo";
+    margin-left: 50px;
+    filter: contrast(100);
+    margin-top: 20px;
+}
+.mainLogo img{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.navBar{
+    grid-area: "navBar";
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin-right: 50px;
+}
+
+li{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+#selectLanguage{
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    border-radius: 5px;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.loginBtn{
+    border: solid 2px rgb(255, 52, 52);
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: red;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.mainSection{
+    color: white;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    width: 80%;
+}
+
+.mainText h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.mainText h3{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.mainText p{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.getStarted{
+    
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mainSection input{
+    border:2px solid black;
+    color: white;
+    background:transparent;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(50%);
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 0px;
+    width: 350px;
+}
+
+.mainSection input::placeholder{
+    font-size: 14px;
+    color:aliceblue;
+}
+
+.mainSection button{
+    padding: 15px;
+    padding-bottom: 15px;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.divisor p{
+    background-color: rgb(48,48 ,48);
+    color: rgb(48,48,48);
+    font-size: 7.5px;
+}
+
+#secondSection{
+    background-color:black;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.secondSectionContent{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+   justify-content: center;
+}
+
+.secondSectionText{
+    color: white;
+    justify-content: flex-start;
+    margin-left: 18px;
+    width: 30%;
+    margin-right: 30px;
+}
+
+.secondSectionText h2{
+    font-size: 50px;
+}
+
+.secondSectionText h3{
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.secondSectionContent .sectionImg{
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.secondSectionContent .sectionImg img{
+    width: 40rem;
+}
+
+#thirdSection{
+    background-color: black;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.thirdSectionContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.thirdSectionImg{
+    width: 35rem;
+    justify-content: flex-start;
+}
+
+.thirdSectionImg img{
+    width: 35rem;
+}
+
+.thirdSectionText{
+    color: white;
+    justify-content: flex-end;
+    width: 34%;
+    margin-left: 30px;
+}
+
+.thirdSectionText h2{
+    font-size: 50px;
+}
+
+.thirdSectionText h3{
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+#frequentlyAskedQuestions{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.faqContent{
+    justify-content: center;
+    width: 50%;
+}
+
+.faqTitle{
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+}
+
+.questionContainer{
+    background-color: rgb(59,59,59);
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questionContainer h3{
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 2rem;
+    margin-left: 5%;
+}
+
+.expandSymbol{
+    cursor: pointer;
+    justify-content: end;
+}
+
+.expandSymbol img{
+    width: 70px;
+    filter: invert(100%);
+    justify-content: flex-end;
+}
+
+.emailBottom{
+    margin: 50px;
+    text-align: center;
+
+}
+
+.emailBottom p{
+    margin: 2rem;
+    font-size: 20px;
+}
+
+.emailBottom input{
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 0px;
+    width: 550px;
+    border-radius: 5px;
+}
+
+.emailBottom input::placeholder{
+    font-size: 14px;
+}
+
+.emailBottom button{
+    padding: 18px;
+    padding-bottom: 19px;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#footer{
+    background-color: black;
+    color: rgb(88,88,88);
+    font-weight: bold;
+}
+
+#footer p{
+    margin-left: 22.4%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    margin-right: 50px;
+    width: 55%;
+    margin: auto;
+    row-gap: 15px;
+}
+
+#footer li{
+    grid-column: auto;
+    width: 20%;
+}
+
+#footer li a{
+    text-decoration: none;
+    color: rgb(104,104,104);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
